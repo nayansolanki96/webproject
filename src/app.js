@@ -13,7 +13,7 @@ app.set("view engine","hbs");
 app.set("views",template);
 hbs.registerPartials(partials);
 
-app.use(express.static(staticpath));
+app.use(express.static(staticpath));  
 
 
 //routing
@@ -38,4 +38,4 @@ app.get("*",(req,res)=>{
 
 app.listen(port,()=>{
     console.log(`listen ${port}`);
-}); 
+});
